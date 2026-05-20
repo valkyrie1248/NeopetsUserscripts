@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           Neopets: Highlight Wearables in Quick Stock
+@namespace      https://github.com/saahphire/NeopetsUserscripts
+@version        1.0.0
+@description    Highlights wearable items in Quick Stock.
+@author         saahphire
+@homepageURL    https://github.com/saahphire/NeopetsUserscripts
+@supportURL     https://github.com/saahphire/NeopetsUserscripts/issues
+updateURL       https://github.com/saahphire/NeopetsUserscripts/blob/main/highlightWearablesInQuickStock.css
+@license        Unlicense
+==/UserStyle== */
+
+@-moz-document regexp("quickstock.phtml") {
+    .np-table-row:has([value="closet"]) {
+        background-color: #DFEAF7!important;
+    }
+}
